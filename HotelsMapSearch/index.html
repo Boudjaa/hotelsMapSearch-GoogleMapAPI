@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mapContainer"></div>
+    <div class="bst-filter">
+      <div class="bst-sidebar flex-column left-div">
+        <header>
+          <h1>Hotels</h1>
+          <h2>Find the right hotel</h2>
+        </header>
+
+        <form action="" id="input_search" class="flex-column">
+          <input type="text" id="search" placeholder="Enter the country name" />
+          <ul id="auto_suggest_list"></ul>
+          <input
+            type="text"
+            id="countries_input"
+            placeholder="Choose the name of the country"
+          />
+          <ul id="countries_list"></ul>
+          <button id="submit" type="submit" class="lis-primary-btn">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG3wYEezxXegmcDowMUcKQIj2LMFmojJs&callback=initMap"
+    ></script>
+  </body>
+</html>
